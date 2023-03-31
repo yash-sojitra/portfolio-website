@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/*
+font families
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+font-family: 'Major Mono Display', monospace;
+*/
+
+/* common class */
+
+.black{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.white{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.second-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+/* navbar */
+
+.container-fluid{
+    padding: 0px;
+}
+
+.navbar{
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+    padding: 2% 8%;
+    
+}
+
+.navbar-brand{
+    color: var(--white) !important;
+    font-size: 2rem;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.nav-link{
+    color: var(--white) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 30;
+    margin: 0% 3%;
+    text-align: right;
+}
+
+/* home section */
+
+.title{
+    height: 90vh;
+    margin: 0% 8%;
+    border-top: 5px solid var(--white);
+    border-right: 5px solid var(--white);
+    border-left: 5px solid var(--white);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+    padding: 0% 8%;
+}
+
+
+/* services section */
+
+.box{
+    margin: 0% 8%;
+    border-right: 5px solid var(--black);
+    border-left: 5px solid var(--black);
+}
+
+.heading h2{
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 4% 4%;
+}
+
+.service-cards{
+    padding-bottom: 8%;
+}
+
+h3{
+    font-size: 2.1rem;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+}
+
+.row p{
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    padding: 4% 4% 0%;
+
+}
+
+.service-details{
+    text-align: center;
+    border: 5px solid var(--black);
+    padding: 3% 0%;
+    margin:0% 2%;
+}
+
+.service-details i{
+    font-size: 5rem;
+    padding:5% 0% 23%;
+}
+
+
+/* work section */
+
+.work-box{
+    margin: 0% 8%;
+    border-right: 5px solid var(--white);
+    border-left: 5px solid var(--white);
+    padding-bottom: 5%;
+}
+
+.site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.site a{
+    color: var(--white);
+    font-size: 3.3rem;
+}
+
+.image-1{
+    width: 50%;
+}
+
+.site p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding:3% 20%;
+    text-align: center;
+}
+
+/* contact section */
+
+.contact-box{
+    margin: 0% 8%;
+    border-right: 5px solid var(--black);
+    border-left: 5px solid var(--black);
+    padding-bottom: 5%;
+}
+
+.form{
+    display: flex;
+
+}
+
+form{
+    width: 50%;
+    padding: 0% 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.form-control{
+    border: 2px solid var(--black);
+    border-radius: 0px;
+}
+
+.input-box{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.input-box:active{
+    background-color: var(--white);
+    color: var(--black);
+    
+}
+
+.name{
+    display:flex;
+}
+
+.fname{
+    margin-right: 2%;
+}
+
+.send-btn{
+    margin-top: 3%;
+    border-radius: 0;
+    font-weight: 300;
+}
+
+.number{
+    margin: 20% 0%;
+}
+
+.socials{
+    padding: 0% 4%;
+}
+
+.socials h3{
+    font-size: 2.5rem;
+}
+
+.socials p,.socials i{
+    font-size: 2rem;
+}
+
+.socials i{
+    padding: 3%;
+}
+
+.dark-title{
+    display:flex;
+    flex-direction: column;
+    border-bottom: 5px solid var(--white);
+    border-right: 5px solid var(--white);
+    border-left: 5px solid var(--white);
+    padding: 13% 0%;
+    margin: 0% 8%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-title button{
+    border-radius: 0;
+    padding: 0.7% 3%;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin: 2% 0%;
+}
+
+.surprise-box{
+    padding-bottom: 5%;
+}
+
+/* media queries */
+
+@media (max-width: 960px) {
+    
+    .heading h2{
+        font-size: 3rem;
+
+    }
+
+    .title{
+        justify-content: center;
+    }
+
+    .title h1{
+        font-size: 3.8rem;
+        text-align: center;
+    }
+
+    .row{
+        padding:0% 5%;
+    }
+
+    .service-details{
+        margin: 3%;
+    }
+    .service-details i{
+        padding-bottom: 5%;
+    }
+
+    .image-1{
+        width: 70%;
+    }
+
+    .site a{
+        font-size: 1.5rem;
+    }
+    .site p{
+        font-size: 0.9rem;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+    form{
+        width: 100%;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6% 4%;
+        text-align: center;
+    }
+    .dark-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10% 0%;
+    }
+    .dark-title button{
+        padding: 3% 4%;
+        margin: 4% 0%;
+    }
+}
